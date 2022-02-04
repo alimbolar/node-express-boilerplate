@@ -1,0 +1,24 @@
+{
+  "name": "node-express-boilerplate",
+  "version": "1.0.0",
+  "description": "This a boilerplate for my NODE applications where I'd be using Express and PUG to start with.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimbolar/node-express-boilerplate.git"
+  },
+  "author": "Alim Bolar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alimbolar/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/alimbolar/node-express-boilerplate#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "pug": "^3.0.2"
+  }
+}
