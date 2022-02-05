@@ -14,10 +14,10 @@ viewController.showPage = function (req, res) {
 
   if (existingPages.includes(req.params.path)) res.render(req.params.path);
   else res.send("Sorry URL does not exist");
-  const trimmedPath = url
-    .parse(req.url, true)
-    .pathname.replace(/^\/+|\/+$/g, "");
-  res.render(trimmedPath);
+  // const trimmedPath = url
+  //   .parse(req.url, true)
+  //   .pathname.replace(/^\/+|\/+$/g, "");
+  // res.render(trimmedPath);
 };
 
 viewController.showShop = function (req, res) {
