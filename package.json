@@ -4,7 +4,8 @@
   "description": "This a boilerplate for my NODE applications where I'd be using Express and PUG to start with.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server"
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@ const apiRouter = require("./routers/apiRouter");
 
 app.set("views", "./views");
 app.set("view engine", "pug");
-app.use(express.static(path.join(__dirname, "htmlboilerplate")));
+app.use(express.static(path.join(__dirname, "public")));
 
 // app.get("/", (req, res) => {
 //   //   res.send("Hello World");
