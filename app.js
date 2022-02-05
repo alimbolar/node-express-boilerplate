@@ -1,4 +1,3 @@
-const { static } = require("express");
 const express = require("express");
 const path = require("path");
 const app = express();
@@ -7,7 +6,6 @@ const apiRouter = require("./routers/apiRouter");
 
 app.set("views", "./views");
 app.set("view engine", "pug");
-app.use(express.static(__dirname + "html-boilerplate"));
 
 // app.get("/", (req, res) => {
 //   //   res.send("Hello World");
@@ -16,5 +14,6 @@ app.use(express.static(__dirname + "html-boilerplate"));
 
 app.use("/", viewRouter);
 app.use("/api", apiRouter);
+app.use(express.static(path.join(__dirname, "html-boilerplate")));
 
 module.exports = app;

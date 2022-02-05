@@ -7,17 +7,8 @@ viewController.showHome = function (req, res) {
   res.render("home");
 };
 
-viewController.showPage = function (req, res) {
-  const existingPages = ["home", "contact"];
-
-  console.log(req.params);
-
-  if (existingPages.includes(req.params.path)) res.render(req.params.path);
-  else res.send("Sorry URL does not exist");
-  // const trimmedPath = url
-  //   .parse(req.url, true)
-  //   .pathname.replace(/^\/+|\/+$/g, "");
-  // res.render(trimmedPath);
+viewController.showContact = function (req, res) {
+  res.render("contact");
 };
 
 viewController.showShop = function (req, res) {

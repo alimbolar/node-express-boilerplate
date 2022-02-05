@@ -4,6 +4,6 @@ const viewController = require("../controllers/viewController");
 
 router.get("/", viewController.showHome);
 router.get("/shop", viewController.showShop);
-router.get("/:path", viewController.showPage);
+router.get("/contact", viewController.showContact);
 
 module.exports = router;
