@@ -2,6 +2,8 @@ const express = require("express");
 const app = require("./app");
 const path = require("path");
 
-const server = app.listen(3000, function () {
-  console.log("Server is running at Port 3000");
+const PORT = process.env.PORT || 3000;
+
+const server = app.listen(PORT, function () {
+  console.log(`Server is running at Port ${PORT}`);
 });
