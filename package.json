@@ -18,6 +18,8 @@
   "homepage": "https://github.com/alimbolar/node-express-boilerplate#readme",
   "dependencies": {
     "express": "^4.17.2",
+    "local-cors-proxy": "^1.1.0",
+    "node-fetch": "2.0",
     "nodemon": "^2.0.15",
     "pug": "^3.0.2"
   }
